@@ -1,0 +1,492 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --overley:rgba(0,0,0,.7);
+    --white:white;
+    --orangered:orangered;
+    --lime:lime;
+    --main:#242424;
+    --aqua:aqua;
+}
+
+body{
+    background: var(--main);
+}
+
+/*===============================
+         banner section 
+=================================*/
+
+
+.banner_image img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+.banner_image {
+    position: relative;
+   
+}
+.banner_image::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--overley);
+}
+.banner {
+    position: relative;
+}
+.my_navber .navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+}
+.bg-light {
+    background-color: transparent!important;
+}
+.bg_main{
+    background: var(--orangered) !important;
+   
+    transition: 1s;
+}
+
+.navbar .navbar-brand {
+    color: var(--white);
+}
+.navbar .navbar-brand:hover {
+    color: var(--white);
+}
+.navbar-nav .nav-item .nav-link {
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 500;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    transition: .5s;
+    text-align: center;
+    
+}
+.navbar-nav .nav-item .nav-link:hover {
+    color: var(--orangered);
+}
+.navbar-nav .nav-item .nav-link.active {
+    color: var(--orangered);
+}
+.banner_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: var(--white);
+    text-align: center;
+
+}
+.banner_text h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color:var(--orangered);
+    font-family: 'Dancing Script';
+}
+.banner_text span {
+    font-size: 40px;
+    color: var(--lime);
+}
+.banner_text h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    color:var(--white);
+}
+
+
+/*===============================
+         About me section 
+=================================*/
+
+.about_text h1 {
+    color: var(--orangered);
+    margin-top: 70px;
+}
+.about_text p {
+    color: var(--white);
+    text-align: justify;
+}
+.about_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about_img img {
+   width: 250px;
+   height: 250px;
+   border-radius: 50%;
+   margin-top: 70px;
+  
+}
+
+
+
+
+/*===============================
+         servies section 
+=================================*/
+
+
+.servies_title h1 {
+    text-align: center;
+    font-size: 40px;
+    color: var(--white);
+    text-transform: uppercase;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.card_img img {
+    height: 200px;
+}
+.card-text h1 {
+    font-size: 30px;
+    color: var(--white);
+    text-transform: uppercase;
+    text-align: center;
+}
+.card-text p {
+    color: var(--white);
+}
+
+
+
+/*===============================
+         My Skill  section 
+=================================*/
+
+
+
+.skill_title h1 {
+    text-align: center;
+    font-size: 40px;
+    color: var(--white);
+    text-transform: uppercase;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.progress_text small {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.project_title h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--white);
+    margin-top: 200px;
+}
+.complated_project {
+    width: 250px;
+    height: 250px;
+    border: 2px solid var(--lime);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    color: var(--white);
+    text-transform: uppercase;
+    margin-top: 50px;
+    
+    
+
+}
+.complated_project h2 {
+    font-size: 25px;
+}
+
+
+
+
+
+/*===============================
+        my tour image && conteck me  section 
+=================================*/
+
+
+
+
+.tour_image_title h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--white);
+    margin-top: 200px;
+    margin-bottom: 70px;
+}
+
+.conteck_title h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--white);
+    margin-top: 200px;
+    margin-bottom: 70px;
+}
+.mix_list {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.mix_list li {
+    background: var(--aqua);
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.google_map iframe {
+    height: 370px;
+    max-width: 100%;
+}
+
+#footer{
+    background: var(--overley);
+    font-size: 15px;
+    color: var(--white);
+    padding: 10px;
+    text-align: center;
+    margin-top: 50px;
+
+}
+#footer i {
+    font-size: 30px;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+.scrollTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: var(--orangered);
+    border-radius: 8px 8px 0px 0px;
+    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.scrollTop i {
+    color: var(--white);
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*===================================================
+                     Responsive  
+=======================================================*/
+/* @media(max-width:991px){
+    .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+        display: flex;
+        flex-wrap: inherit;
+        align-items: center;
+        justify-content: space-between;
+       
+    }
+    .navbar-nav .nav-item .nav-link {
+        background: green;
+    }
+} */
+
+@media(max-width:540px){
+    .banner_text h1 {
+        font-size: 40px;
+    }
+    .banner_text span {
+        font-size: 30px;
+    }
+    .banner_text h2 {
+        font-size: 30px;
+    }
+}
+
+@media(max-width:414px){
+    .banner_text h1 {
+        font-size: 30px;
+    }
+    .banner_text span {
+        font-size: 25px;
+    }
+    .banner_text h2 {
+        font-size: 25px;
+    }
+    .servies_title h1 {
+        font-size: 30px;
+    }
+    .card-text h1 {
+        font-size: 25px;
+    }
+    .skill_title h1 {
+        font-size: 30px;
+    }
+    .project_title h1 {
+        font-size: 30px;
+    }
+    .complated_project h2 {
+        font-size: 20px;
+    }
+    .tour_image_title h1 {
+        font-size: 30px;
+    }
+    .mix_list {
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 30px;
+    }
+    .mix_list li {
+        padding: 5px 0px;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .conteck_title h1 {
+        font-size: 30px;
+    }
+    #footer i {
+        font-size: 20px;
+        margin: 0px 5px;
+    }
+}
+
+@media(max-width:360px){
+    .banner_text h1 {
+        font-size: 25px;
+    }
+    .banner_text span {
+        font-size: 20px;
+    }
+    .banner_text h2 {
+        font-size: 20px;
+    }
+    .servies_title h1 {
+        font-size: 30px;
+    }
+    .card-text h1 {
+        font-size: 20px;
+    }
+    .skill_title h1 {
+        font-size: 30px;
+    }
+    .project_title h1 {
+        font-size: 30px;
+    }
+    .complated_project h2 {
+        font-size: 20px;
+    }
+    .tour_image_title h1 {
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+    .conteck_title h1 {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+    .mix_list {
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 30px;
+    }
+    .mix_list li {
+        font-size: 15px;
+        padding: 6px 0px;
+        margin-bottom: 10px;
+    }
+    #footer i {
+        font-size: 22px;
+        margin: 0px 6px;
+      
+    }
+}
+
+@media(max-width:280px){
+    .banner_text h1 {
+        font-size: 20px;
+    }
+    .banner_text span {
+        font-size: 15px;
+    }
+    .banner_text h2 {
+        font-size: 15px;
+    }
+    .card-text p {
+        text-align: justify;
+    }
+    .servies_title h1 {
+        font-size: 27px;
+    }
+    .card-text h1 {
+        font-size: 20px;
+    }
+    .skill_title h1 {
+        font-size: 30px;
+    }
+    .progress_text small {
+        font-size: 15px;
+    }
+    .project_title h1 {
+        font-size: 25px;
+    }
+    .complated_project h2 {
+        font-size: 15px;
+    }
+    .tour_image_title h1 {
+        font-size: 25px;
+       
+    }
+    .mix_list {
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 30px;
+    }
+    .mix_list li {
+        padding: 4px 0px;
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .scrollTop {
+        width: 38px;
+        height: 39px;
+    }
+    .scrollTop i {
+        font-size: 23px;
+    }
+    #footer i {
+        font-size: 20px;
+        margin: 0px 5px;
+    }
+
+}
+
+
+
+
